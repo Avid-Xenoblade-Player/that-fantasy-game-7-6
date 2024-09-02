@@ -1,0 +1,28 @@
+body {
+	font-family: "Atkinson Hyperlegible";
+}
+
+p.dialogue {
+   text-align: left;
+	color: #333333;
+   background-color: #ffffff;
+   overflow: hidden; /* Keeps it hidden before it is 'typed'. */
+   border-right: .5em solid #ffffff; /* Cursor rectangle */
+   white-space: nowrap;
+   margin: 0 auto; /* Scrolling effect */
+   letter-spacing: .10em;
+   animation:
+		typing 1.9s steps(500, end); /* Typing animation */
+	padding: 3px 10px 3px 10px;
+	position: absolute;
+	top: 95%;
+	left: 50%
+	transform: translate(-95%, -50%);
+
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0; } /* At the start, no width. */
+   to { width: 90%; } /* At the end, full width. */
+}
